@@ -6,7 +6,10 @@ const VideoList=({videos,onVideoSelect})=>{
 
 	const RenderedList=videos.map((video)=>{
 
-		return <VideoItem onVideoSelect={onVideoSelect} video={video} />;
+		return <VideoItem key={video.id.videoId}
+				onVideoSelect={onVideoSelect} 
+				video={video} 
+				/>;
 	});
 
 	return(
