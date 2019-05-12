@@ -31,14 +31,14 @@ class App extends React.Component {
         <SearchBar
            onFormSubmit={this.onTermSubmit}
         />
-        <VideoDetail 
-          video={this.state.selectedVideo}
-        />
+        <VideoDetail video={this.state.selectedVideo}/>
+      
 
         <VideoList 
           onVideoSelect={this.onVideoSelect}
           videos={this.state.videos}
          />
+          
       </div>
 
       
